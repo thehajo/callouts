@@ -1,0 +1,49 @@
+<root>
+   <name>Callouts</name>
+   <key>callouts</key>
+   <state>stable</state> <!-- stable | unstable | beta | alpha -->
+   <logo>https://raw.githubusercontent.com/thehajo/callouts/main/plugin.png</logo>
+   <description>
+      <short>
+         <en>Adds a button to the WYSIWYG editor to insert basically markdown callouts.</en>
+		 <de>Fügt einen Knopf in den WYSIWYG Editor hinzu der das Hinzufügen von Markdown Callouts ermöglicht.</de>
+      </short>
+      <long>
+         <en>This plugin allows you to add and use markdown callouts inside your knowledgebase, tickets or wherever the WYSIWYG editor is present! The button is only present in the standard interface, so users in the self-service area do not see it when submitting a ticket.</en>
+		 <de>Diese Plugin ermöglicht es euch Markdown callouts in eure Wissensdatenbank, Tickets oder wo auch immer der WYSIWYG Editor vorhanden ist! The Knopf ist nur in der Standard-Ansicht verfügbar, so das User im Self-Service Bereich den Knopf nicht sehen wenn diese ein Ticket aufmachen.</de>
+      </long>
+   </description>
+   <homepage>https://github.com/thehajo/callouts</homepage>
+   <download>https://github.com/thehajo/callouts/releases</download>
+   <issues>https://github.com/thehajo/callouts/issues</issues>
+   <changelog>https://github.com/thehajo/callouts/releases</changelog>
+   <authors>
+      <author>thehajo</author>
+   </authors>
+   <versions>
+      <version>
+         <num>1.0</num>
+         <compatibility>~11.0.0</compatibility>
+         <download_url>https://github.com/thehajo/callouts/releases/download/1.0.0/callouts-1.0.0.zip</download_url>
+      </version>
+   </versions>
+   <langs>
+      <lang>en_GB</lang>
+      <lang>de_DE</lang>
+   </langs>
+   <license>GPL v3</license>
+   <tags>
+      <en>
+         <tag>Editor</tag>
+		 <tag>Markdown</tag>
+      </en>
+      <de>
+         <tag>Editor</tag>
+		 <tag>Markdown</tag>
+      </de>
+   </tags>
+   <screenshots>
+      <screenshot>https://private-user-images.githubusercontent.com/38141473/614862387-cf6ef3f2-bf39-4545-ac39-f2ce44fd35d7.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI3Nzc5MDUsIm5iZiI6MTc4Mjc3NzYwNSwicGF0aCI6Ii8zODE0MTQ3My82MTQ4NjIzODctY2Y2ZWYzZjItYmYzOS00NTQ1LWFjMzktZjJjZTQ0ZmQzNWQ3LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA2MzAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNjMwVDAwMDAwNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTdmMTE1NzgxOTk0NTlhZjRmMTQ1ODYwYTIzZTZhZTUxZDlkMjNkMzk4MGViNjk0ZDMzYjcyYjFkYTYzZDI5MWYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.8ljG-JKi83FapnILjr1tr0h602H_RcXsRvqOrCSIAYA</screenshot>
+      <screenshot>https://private-user-images.githubusercontent.com/38141473/614862487-a6a2ba14-1943-4924-b76b-16ce31a1b405.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI3Nzc5MDUsIm5iZiI6MTc4Mjc3NzYwNSwicGF0aCI6Ii8zODE0MTQ3My82MTQ4NjI0ODctYTZhMmJhMTQtMTk0My00OTI0LWI3NmItMTZjZTMxYTFiNDA1LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA2MzAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNjMwVDAwMDAwNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTk5ZTM3YWU4Y2NlYjg1M2I3Zjg2OTE3ZTk5NzE0YzM4NmJjMmNhMDk0Mzg3MjExNzE2MWY5M2QwNjJjNzljNTkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.ROwwGC1LJ11gbPhck33bHJJTxAmr3OKuND2WTTdJOqg</screenshot>
+   </screenshots>
+</root>
