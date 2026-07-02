@@ -24,18 +24,18 @@
  * -------------------------------------------------------------------------
  * @copyright Copyright (C) 2026 by thehajo.
  * @license   GPLv3 https://www.gnu.org/licenses/gpl-3.0.html
- * @link      https://github.com/pluginsGLPI/example
+ * @link	  https://github.com/thehajo/callouts
  * -------------------------------------------------------------------------
  */
  
 function plugin_callouts_install()
 {
-    // No install needed, as just JS and CSS are injected
-    return true;
+	// No install needed, as just JS and CSS are injected
+	return true;
 }
 
 function plugin_callouts_uninstall()
 {
-    // No database cleanup needed, JS and CSS just stop getting loaded
-    return true;
+	// No database cleanup needed, JS and CSS just stop getting loaded
+	return true;
 }

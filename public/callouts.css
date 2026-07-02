@@ -22,61 +22,61 @@
  * -------------------------------------------------------------------------
  * @copyright Copyright (C) 2026 by thehajo.
  * @license   GPLv3 https://www.gnu.org/licenses/gpl-3.0.html
- * @link      https://github.com/pluginsGLPI/example
+ * @link	  https://github.com/thehajo/callouts
  * -------------------------------------------------------------------------
  */
  
 /* All callouts */
 /* Using callouts instead of callout, as callout is already using natively in GLPI */
 .callouts {
-    --callouts-color: 120, 120, 120;
+	--callouts-color: 120, 120, 120;
 
-    margin: 1em 0;
-    padding: 1em 1.25em;
+	margin: 1em 0;
+	padding: 1em 1.25em;
 	border: 1px solid rgba(var(--callouts-color), 0.5);
-    border-left: 4px solid rgb(var(--callouts-color));
-    border-radius: 6px;
-    background: rgba(var(--callouts-color), 0.12);
+	border-left: 4px solid rgb(var(--callouts-color));
+	border-radius: 6px;
+	background: rgba(var(--callouts-color), 0.12);
 }
 
 .callouts-title {
-    color: rgb(var(--callouts-color));
-    font-weight: 700;
-    margin-bottom: .5em;
-    display: flex;
-    align-items: center;
-    gap: .4em;
+	color: rgb(var(--callouts-color));
+	font-weight: 700;
+	margin-bottom: .5em;
+	display: flex;
+	align-items: center;
+	gap: .4em;
 }
 
 .callouts-content > :first-child {
-    margin-top: 0;
+	margin-top: 0;
 }
 
 .callouts-content > :last-child {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 /* Note */
 .callouts-note {
-    --callouts-color: 8, 109, 221;
+	--callouts-color: 8, 109, 221;
 }
 
 /* Success */
 .callouts-success {
-    --callouts-color: 8, 185, 78;
+	--callouts-color: 8, 185, 78;
 }
 
 /* Warning */
 .callouts-warning {
-    --callouts-color: 236, 151, 31;
+	--callouts-color: 236, 151, 31;
 }
 
 /* Danger */
 .callouts-danger {
-    --callouts-color: 233, 49, 71;
+	--callouts-color: 233, 49, 71;
 }
 
 /* Examples */
 .callouts-examples {
-    --callouts-color: 120, 82, 238;
+	--callouts-color: 120, 82, 238;
 }

@@ -24,7 +24,7 @@
  * -------------------------------------------------------------------------
  * @copyright Copyright (C) 2026 by thehajo.
  * @license   GPLv3 https://www.gnu.org/licenses/gpl-3.0.html
- * @link      https://github.com/pluginsGLPI/example
+ * @link	  https://github.com/thehajo/callouts
  * -------------------------------------------------------------------------
  */
 use Glpi\Plugin\Hooks;
@@ -46,19 +46,20 @@ define('PLUGIN_CALLOUTS_MAX_GLPI', '11.0.99');
  */
 function plugin_init_callouts()
 {
-    global $PLUGIN_HOOKS,$CFG_GLPI;
+	global $PLUGIN_HOOKS,$CFG_GLPI;
 
 	//Only add the JS file to inject the button when not using the helpdesk (simple) interface
 	//if 'interface' is set in $_SESSION and the interface is NOT helpdesk, load the JS file
-    if (isset($_SESSION['glpiactiveprofile']['interface'])
-        && $_SESSION['glpiactiveprofile']['interface'] !== 'helpdesk') {
+	if (isset($_SESSION['glpiactiveprofile']['interface'])
+		&& $_SESSION['glpiactiveprofile']['interface'] !== 'helpdesk') {
 
-        $PLUGIN_HOOKS[Hooks::ADD_JAVASCRIPT]['callouts'] = 'callouts.js';
-    }
-		
+		$PLUGIN_HOOKS[Hooks::ADD_JAVASCRIPT]['callouts'] = 'callouts.js';
+	}
 
-    // Always add CSS file, so it still renders properly on the user side
-    $PLUGIN_HOOKS[Hooks::ADD_CSS]['callouts'] = 'callouts.css';
+
+	// Always add CSS file, so it still renders properly on the user side
+	$PLUGIN_HOOKS[Hooks::ADD_CSS]['callouts'] = 'callouts.css';
+	Plugin::loadLang('callouts');
 
 }
 
@@ -71,17 +72,17 @@ function plugin_init_callouts()
  */
 function plugin_version_callouts()
 {
-    return [
-        'name'         => 'Callouts',
-        'version'      => PLUGIN_CALLOUTS_VERSION,
-        'author'       => 'thehajo',
-        'license'      => 'GPLv3',
-        'homepage'     => 'https://github.com/thehajo/callouts',
-        'requirements' => [
-            'glpi' => [
-                'min' => PLUGIN_CALLOUTS_MIN_GLPI,
-                'max' => PLUGIN_CALLOUTS_MAX_GLPI,
-            ],
-        ],
-    ];
+	return [
+		'name'         => 'Callouts',
+		'version'      => PLUGIN_CALLOUTS_VERSION,
+		'author'       => 'thehajo',
+		'license'      => 'GPLv3',
+		'homepage'     => 'https://github.com/thehajo/callouts',
+		'requirements' => [
+			'glpi' => [
+				'min' => PLUGIN_CALLOUTS_MIN_GLPI,
+				'max' => PLUGIN_CALLOUTS_MAX_GLPI,
+			],
+		],
+	];
 }
